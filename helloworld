@@ -1,0 +1,3 @@
+The Facebook SDK for Javascript obtains and persists user access tokens automatically in browser cookies. 
+You can retrieve the user access token by making a call to FB.getAuthResponse which will include an accessToken 
+property within the response.

@@ -16,8 +16,6 @@ namespace WebApplication1.Controllers
         
         public ActionResult About()
         {
-            ViewBag.Message = "Why choose CNCT?";
-
             return View();
         }
 

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Web.UI.WebControls;
 
+using Facebook;
 
 namespace Application
 {
@@ -49,6 +50,11 @@ namespace Application
             }
             //access tokens dont expire
             string access_token = tokens["access_token"];
+
+
+            var client = new FacebookClient(access_token);
+            client.Post("/me/feed", new { message = "markhagan.me video turtorial" });
+
 
 
 

@@ -55,8 +55,8 @@ namespace WebApplication1
             //   consumerSecret: "");
 
             //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            //   appId: "2951294864884264",
+            //   appSecret: "c9bfe5c3441cf1f9824760d910ebec05");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{

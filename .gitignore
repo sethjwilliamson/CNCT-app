@@ -260,3 +260,5 @@ paket-files/
 __pycache__/
 *.pyc
 WebApplication1/WebApplication1.csproj
+/discrete/nbproject/private/
+/discrete/build/

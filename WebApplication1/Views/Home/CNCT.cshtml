@@ -3,7 +3,7 @@
     ViewBag.Title = "CNCT";
 }
 
-<h2>CNCT</h2>
+<div align="center"><h2>CNCT</h2></div>
 
 
 <div id="fb-root"></div>
@@ -28,32 +28,20 @@
     <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
     <p>@User.Identity.GetUserId()</p>
     <p>@User.Identity.GetUserName()</p>
-    <div class="gridContainer">
+
+    <strong>Authentication:</strong>
         <div class="row">
-            <div class="col-sm-3">
-                <div class="panel panel-default" style="background-color:#f9f9f9">
-                    <h4>
-                        CNCT Socials
-                    </h4>
-                    <h5>
-                        @*CnctSocials*@
-                    </h5>
-                    <hr>
-                    List of Socials
-                    <ul>
-                        <li>
-                            Twitter
-                        </li>
-                        <li>
-                            Instagram
-                        </li>
-                        <li>
-                            Facebook
-                        </li>
-                    </ul>
-                    <button type="button" style="width:100%">Follow All</button>
-                </div>
+            <div class="col-md-1">
+                <a href="https://www.instagram.com/oauth/authorize/?client_id=acbd4e04e0fe487bbb0e9d7f54dbd124&redirect_uri=http://cnctsocials.com&response_type=token"
+                target="_blank"><img src="~/Images/instagramlogo.jpg" width="50" height="50" /></a>
             </div>
+            <div class="col-md-1">
+                <a href=" " target="_blank"><img src="~/Images/twitterlogo.jpg" width="50" height="50" /></a>
+            </div>
+            <div class="col-md-1">
+                <a href=" " target="_blank"><img src="~/Images/facebooklogo.jpg" width="50" height="50" /></a>
+            </div>
+        </div>
             <div class="col-sm-6">
                 <div class="panel panel-default" style="background-color:#f9f9f9">
                     <div class="gridContainer" id="courseContainer" style="background-color:#f9f9f9">

@@ -39,5 +39,5 @@ if __name__ == '__main__':
   client = get_authenticated_service()
   
   subscriptions_list_my_subscriptions(client,
-    part='snippet,contentDetails',
+    part='snippet',
     mine=True)

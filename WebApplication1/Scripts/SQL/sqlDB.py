@@ -32,9 +32,9 @@ def insertPosts(accessToken, db):
 		
 	cursor.close()
 
-def insertInstaAccessToken(userid, url, db): 
+def insertInstaAccessToken(userid, url): 
 	# After user clicks the authenticate button then they put URL they were sent to in textbox
-	
+	db = getDatabase()
 	accessToken = url.split('access_token=', 1)[1]
 	instaId = json.load(urllib.request.urlopen('https://api.instagram.com/v1/users/self/?access_token=' + accessToken))['data']['id']
 

@@ -22,20 +22,71 @@
 		while($data = $sqlPosts->fetch_array()) {
 			$response .= '
 			<div class="row">
-				<div class="panel panel-default" href = "' . $data['link'] . '" style="margin-left:auto; margin-right:auto; width:90%">';
+				<div class="panel panel-default" style="margin-left:auto; margin-right:auto; width:90%">';
 
 			switch($data['id'][0]) {
 				case 'i':
 					$response .= '
-					<div class="row">
-						Username here
+					<a href="' . $data['link'] . '">
+						<div class="row" style="margin-left:15px; margin-right:15px">
+							' . $conn->query("SELECT users.username FROM `posts`
+							LEFT JOIN `users` ON posts.userid = users.instagramId
+							WHERE posts.id LIKE '" . $data['id'] . "'")->fetch_array()['username'] . '
+						</div>
+					</a>
+					<div class="row" style="margin-left:15px; margin-right:15px">
+						<div id="carousel' . $data['id'] . '" class="carousel slide" data-interval="false" data-ride="carousel">
+							<ol class="carousel-indicators">
+    							<li data-target="#carousel' . $data['id'] . '" data-slide-to="0" class="active"></li>';
+
+					$sqlMedia = $conn->query("SELECT media.link FROM `posts`
+						LEFT JOIN `media` ON posts.id = media.postid
+						WHERE posts.id LIKE '" . $data['id'] . "'
+						ORDER BY media.id ASC");
+
+					for($mediaNum = 1; $mediaNum < $sqlMedia->num_rows; $mediaNum++) {
+						$response .= '
+								<li data-target="#carousel' . $data['id'] . '" data-slide-to="' . $mediaNum . '"></li>
+						';
+					}
+
+					$mediaNum = 0;
+					$response .= '
+							</ol>
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="' . $sqlMedia->fetch_array()['link'] . '" alt = "' . $mediaNum++ . '">
+								</div>
+					';
+
+					while($media = $sqlMedia->fetch_array()) {
+						$response .= '
+								<div class="item">
+									<img src="' . $media['link'] . '" alt = "' . $mediaNum++ . '">
+								</div>
+						';
+					}
+
+					$response .= '
+								<a class="left carousel-control" href="#carousel' . $data['id'] . '" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#carousel' . $data['id'] . '" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+					';
+
+					$response .= '
+						</div>
 					</div>
-					<div class="row">
-						<img srcset="https://scontent.cdninstagram.com/vp/41f1ab488ce2d6cc31d9ef0de471a14c/5D3C2B28/t51.2885-15/sh0.08/e35/s640x640/51960952_325260398338412_792144657913854242_n.jpg?_nc_ht=scontent.cdninstagram.com"
-					</div>
-					<div class="row">
-						' . $data['time'] . '
-					</div>
+					<a href="' . $data['link'] . '">
+						<div class="row" style="margin-left:15px; margin-right:15px">
+							' . $data['time'] . '
+						</div>
+					</a>
 					';
 					break;
 				case 't':
@@ -50,10 +101,8 @@
 			}
 			$response .= '
 				</div>
-			</div>
 			</div>';
 		}
-		echo($response);
 		exit($response);
 	} 
 	else

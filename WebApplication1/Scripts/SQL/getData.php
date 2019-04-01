@@ -1,7 +1,7 @@
 <?php
 	$conn = new mysqli('155.138.243.181', 'cnctsoci_admin', 'Csc3380!!!', 'cnctsoci_data');
-	#$start = $conn->real_escape_string($_POST['start']);
-	#$limit = $conn->real_escape_string($_POST['limit']);
+	$start = $conn->real_escape_string($_POST['start']);
+	$limit = $conn->real_escape_string($_POST['limit']);
 	#$query = stripslashes($conn->real_escape_string($_POST['query']));
 	#$users = stripslashes($conn->real_escape_string($_POST['users']));
 
@@ -13,9 +13,10 @@
 	# Add query
 	$sqlPosts = $conn->query("SELECT * FROM `posts`
 		ORDER BY `time` DESC
-		LIMIT 0, 20");
+		LIMIT $start, $limit");
 		
-	if ($sqlPosts->num_rows > 0) {
+	if ($sqlPosts->num_rows > 0) 
+	{
 		$response = "";
 
 		while($data = $sqlPosts->fetch_array()) {
@@ -45,13 +46,16 @@
 					break;
 				default:
 					echo("it broke ?");
+					break;
+			}
 			$response .= '
 				</div>
+			</div>
 			</div>';
-			}
 		}
-
+		echo($response);
 		exit($response);
-	} else
+	} 
+	else
 		exit('reachedMax');
 ?>

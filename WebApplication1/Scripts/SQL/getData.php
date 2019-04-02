@@ -2,19 +2,39 @@
 	$conn = new mysqli('155.138.243.181', 'cnctsoci_admin', 'Csc3380!!!', 'cnctsoci_data');
 	$start = $conn->real_escape_string($_POST['start']);
 	$limit = $conn->real_escape_string($_POST['limit']);
-	#$query = stripslashes($conn->real_escape_string($_POST['query']));
+	$query = $_POST['query'];
 	#$users = stripslashes($conn->real_escape_string($_POST['users']));
 
 	#$sqlUser = $conn->query("SELECT instagramId, facebookId, twitterId FROM `users` WHERE `id` = $user");
 	#$instagramId = $sqlUser->fetch_array();
 	#$facebookId = $sqlUser->fetch_array();
 	#$twitterId = $sqlUser->fetch_array();
+	$queryString = 'WHERE ';
 
-	# Add query
+	if($query['isInstagram'] == "true") { 
+		$queryString .= '(posts.id LIKE "i%" ';
+
+		if($query['isTwitter'] == "true") {
+			$queryString .= 'OR posts.id LIKE "t%") AND ';
+		} else {
+			$queryString .= ') AND ';
+		}
+	} else if($query['isTwitter'] == "true") {
+		$queryString .= 'posts.id LIKE "t%" AND ';
+	}
+
+	if($query['timeStart'] == "")
+		$query['timeStart'] = "1111/1/1";
+	if($query['timeEnd'] == "")
+		$query['timeEnd'] = date("Y/m/d");
+
+	$queryString .= 'posts.time BETWEEN "' . $query['timeStart'] . '" AND "' . $query['timeEnd'] . '" ';
+	
 	$sqlPosts = $conn->query("SELECT * FROM `posts`
-		ORDER BY `time` DESC
+		" . $queryString . " 
+		ORDER BY `time` DESC 
 		LIMIT $start, $limit");
-		
+
 	if ($sqlPosts->num_rows > 0) 
 	{
 		$response = "";
@@ -55,14 +75,14 @@
 							</ol>
 							<div class="carousel-inner">
 								<div class="item active">
-									<img src="' . $sqlMedia->fetch_array()['link'] . '" alt = "' . $mediaNum++ . '">
+									<img src="' . $sqlMedia->fetch_array()['link'] . '" alt = "' . $mediaNum++ . '" style="width:100%">
 								</div>
 					';
 
 					while($media = $sqlMedia->fetch_array()) {
 						$response .= '
 								<div class="item">
-									<img src="' . $media['link'] . '" alt = "' . $mediaNum++ . '">
+									<img src="' . $media['link'] . '" alt = "' . $mediaNum++ . '" style="width:100%">
 								</div>
 						';
 					}

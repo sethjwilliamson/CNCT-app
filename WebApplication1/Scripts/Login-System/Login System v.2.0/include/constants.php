@@ -16,7 +16,7 @@
  * to the MySQL database. Make sure the information is
  * correct.
  */
-define("DB_SERVER", "localhost:3360");
+define("DB_SERVER", "localhost:3306");
 define("DB_USER", "cnctsoci_admin");
 define("DB_PASS", "Csc3380!!!");
 define("DB_NAME", "cnctsoci_login");

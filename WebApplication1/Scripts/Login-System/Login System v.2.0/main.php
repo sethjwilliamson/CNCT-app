@@ -15,7 +15,7 @@ include("include/session.php");
 ?>
 
 <html>
-<title>Jpmaster77's Login Script</title>
+<title>CNCT</title>
 <body>
 
 <table>
@@ -104,7 +104,7 @@ include("include/session.php");
 ?>
 
 <html>
-<title>Jpmaster77's Login Script</title>
+<title>CNCT</title>
 <body>
 
 <?
@@ -1043,9 +1043,9 @@ class Mailer
     */
    function sendWelcome($user, $email, $pass){
       $from = "From: ".EMAIL_FROM_NAME." <".EMAIL_FROM_ADDR.">";
-      $subject = "Jpmaster77's Site - Welcome!";
+      $subject = "CNCT's Site - Welcome!";
       $body = $user.",\n\n"
-             ."Welcome! You've just registered at Jpmaster77's Site "
+             ."Welcome! You've just registered at CNCT's Site "
              ."with the following information:\n\n"
              ."Username: ".$user."\n"
              ."Password: ".$pass."\n\n"
@@ -1054,7 +1054,7 @@ class Mailer
              ."email address, if you would like to change your "
              ."email address you can do so by going to the "
              ."My Account page after signing in.\n\n"
-             ."- Jpmaster77's Site";
+             ."- CNCT Socials Site";
 
       return mail($email,$subject,$body,$from);
    }
@@ -1070,14 +1070,14 @@ class Mailer
       $body = $user.",\n\n"
              ."We've generated a new password for you at your "
              ."request, you can use this new password with your "
-             ."username to log in to Jpmaster77's Site.\n\n"
+             ."username to log in to CNCT's Site.\n\n"
              ."Username: ".$user."\n"
              ."New Password: ".$pass."\n\n"
              ."It is recommended that you change your password "
              ."to something that is easier to remember, which "
              ."can be done by going to the My Account page "
              ."after signing in.\n\n"
-             ."- Jpmaster77's Site";
+             ."- CNCT Socials Site";
              
       return mail($email,$subject,$body,$from);
    }
@@ -1483,10 +1483,10 @@ $database = new MySQLDB;
  * to the MySQL database. Make sure the information is
  * correct.
  */
-define("DB_SERVER", "localhost");
-define("DB_USER", "your_name");
-define("DB_PASS", "your_pass");
-define("DB_NAME", "your_dbname");
+define("DB_SERVER", "localhost:3360");
+define("DB_USER", "cnctsoci_admin");
+define("DB_PASS", "Csc3380!!!");
+define("DB_NAME", "cnctsoci_login");
 
 /**
  * Database Table Constants - these constants

@@ -34,12 +34,19 @@
                 target="_blank"><img src="/site2/Images/instagramlogo.jpg" width="50" height="50" /></a>
             </div>
             <div class="col-md-1">
-                <a href=" " target="_blank"><img src="/site2/Images/twitterlogo.jpg" width="50" height="50" /></a>
+                <a href=" " target="_blank"><img src="/site2/Images/youtubelogo.jpg" width="50" height="50" /></a>
             </div>
             <div class="col-md-1">
                 <a href=" " target="_blank"><img src="/site2/Images/facebooklogo.jpg" width="50" height="50" /></a>
             </div>
         </div>
+
+        <form onsubmit="return false;">
+            Copy and Paste URL here:<br>
+            <input type="text" id="userInput"/><br>
+            <input type="submit" onclick="onInstaAuthenticationClick()"/>
+        </form>
+
         <div class="row">
             <div class="col-sm-3">
                 <div class="panel panel-default" style="background-color:#f9f9f9; padding:15px">
@@ -61,7 +68,7 @@
                         Filters
                     </h4>
                     <form>
-                        <input type="checkbox" id="twitterCheckbox"> Twitter Posts <br>
+                        <input type="checkbox" id="youtubeCheckbox"> Youtube Posts <br>
                         <input type="checkbox" id="instagramCheckbox"> Instagram Posts <br>
                         <input type="text" placeholder="1111/1/1" class="form-control" id="startDate">
                         <input type="text" placeholder="2019/3/29" class="form-control" id="endDate">
@@ -99,6 +106,18 @@
         getData();
     }
 
+    function onInstaAuthenticationClick() {
+        $.ajax({
+            url: '/site2/Scripts/SQL/insertPosts.php',
+            type: 'POST',
+            dataType: 'text',
+            data: "test",
+            success: function (response) {
+                alert("worked ?");
+            }
+        });
+    }
+
     function getData() {
         if (reachedMax) {
             return;
@@ -113,7 +132,7 @@
                 limit: limit,
                 query : {
                     'isInstagram' : document.getElementById("instagramCheckbox").checked,
-                    'isTwitter' : document.getElementById("twitterCheckbox").checked,
+                    'isYoutube' : document.getElementById("youtubeCheckbox").checked,
                     'timeStart' : document.getElementById("startDate").value,
                     'timeEnd' : document.getElementById("endDate").value
                 }

@@ -14,13 +14,13 @@
 	if($query['isInstagram'] == "true") { 
 		$queryString .= '(posts.id LIKE "i%" ';
 
-		if($query['isTwitter'] == "true") {
-			$queryString .= 'OR posts.id LIKE "t%") AND ';
+		if($query['isYoutube'] == "true") {
+			$queryString .= 'OR posts.id LIKE "y%") AND ';
 		} else {
 			$queryString .= ') AND ';
 		}
-	} else if($query['isTwitter'] == "true") {
-		$queryString .= 'posts.id LIKE "t%" AND ';
+	} else if($query['isYoutube'] == "true") {
+		$queryString .= 'posts.id LIKE "y%" AND ';
 	}
 
 	if($query['timeStart'] == "")
@@ -109,8 +109,32 @@
 					</a>
 					';
 					break;
-				case 't':
-					# Twitter Post
+				case 'y':
+					# Youtube Post
+					$response .= '
+					<a href="' . $data['link'] . '">
+						<div class="row" style="margin-left:15px; margin-right:15px">
+							' . $conn->query("SELECT users.username FROM `posts`
+							LEFT JOIN `users` ON posts.userid = users.youtubeId
+							WHERE posts.id LIKE '" . $data['id'] . "'")->fetch_array()['username'] . '
+						</div>
+					</a>
+					<div class="row" style="margin-left:15px; margin-right:15px">';
+
+					$sqlMedia = $conn->query("SELECT media.link FROM `posts`
+						LEFT JOIN `media` ON posts.id = media.postid
+						WHERE posts.id LIKE '" . $data['id'] . "'
+						ORDER BY media.id ASC");
+						
+					$response .= '
+						<img src="' . $sqlMedia->fetch_array()['link'] . '" style="width:100%">
+					</div>
+					<a href="' . $data['link'] . '">
+						<div class="row" style="margin-left:15px; margin-right:15px">
+							' . $data['time'] . '
+						</div>
+					</a>';
+
 					break;
 				case 'f':
 					# Facebook Post

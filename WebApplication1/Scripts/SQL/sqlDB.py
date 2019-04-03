@@ -3,7 +3,9 @@ import pymysql
 import json
 import urllib.request
 
-def getAccessToken(userid, db):
+def getAccessToken(userid):
+	db = getDatabase()
+
 	cursor = db.cursor()
 
 	cursor.execute("""SELECT `instagramToken` FROM `users` WHERE `id` LIKE %s""", (userid))
@@ -14,7 +16,9 @@ def getAccessToken(userid, db):
 
 	return accessToken
 
-def insertPosts(accessToken, db): 
+def insertPosts(accessToken): 
+	db = getDatabase()
+
 	data = json.load(urllib.request.urlopen('https://api.instagram.com/v1/users/self/media/recent/?access_token=' + accessToken))['data']
 
 	cursor = db.cursor()
@@ -35,6 +39,7 @@ def insertPosts(accessToken, db):
 def insertInstaAccessToken(userid, url): 
 	# After user clicks the authenticate button then they put URL they were sent to in textbox
 	db = getDatabase()
+
 	accessToken = url.split('access_token=', 1)[1]
 	instaId = json.load(urllib.request.urlopen('https://api.instagram.com/v1/users/self/?access_token=' + accessToken))['data']['id']
 
@@ -44,7 +49,9 @@ def insertInstaAccessToken(userid, url):
 	
 	cursor.close()
 
-def createUserDocument(userid, username, db): 
+def createUserDocument(userid, username): 
+	db = getDatabase()
+
 	cursor = db.cursor()
 
 	cursor.execute("""INSERT INTO `users` (`id`, `username`) VALUES (%s, %s);""", (userid, username))
@@ -55,12 +62,12 @@ def getDatabase():
 	return pymysql.connect(user='cnctsoci_admin', password='Csc3380!!!', host='155.138.243.181', database='cnctsoci_data')
 
 
-db = getDatabase()
+#db = getDatabase()
 
 #createUserDocument('123', 'sethjfake', db)
 #insertInstaAccessToken('1', 'https://api.instagram.com/v1/users/self/media/recent/?access_token=9460084.acbd4e0.170edecd59674901b4b43551225b8c60', db)
 #insertPosts(getAccessToken('1', db), db)
 #insertPosts('9460084.acbd4e0.170edecd59674901b4b43551225b8c60', db)
 
-db.commit()
-db.close()
+#db.commit()
+#db.close()

@@ -1,7 +1,13 @@
+<?php
+    include("Login/include/session.php");
+    if(!$session->logged_in){
+        header('Location: ' . 'Login/main.php');
+        exit();
+    }
+?>
 
-
-<!DOCTYPE html>
 <html>
+
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -78,9 +84,8 @@ body {
 <div id="navbar">
   <a class="active" href="javascript:void(0)">Home</a>
   <a href="/site2/Scripts/Contact.cshtml">Contact</a>
-  <a href="/site3TEST/Login%20System%20v.2.0/main.php">Logout</a>
+  <a href="Login/process.php">Logout</a>
   <a style="position:absolute; width: 20%; margin-left: 40%; margin-right: 40%;; font-weight:bold; " href="javascript:void(0)">CNCT</a>
-
 </div>
 
 
@@ -111,28 +116,17 @@ function myFunction() {
 </head>
 
 <body style="background-color:#e1e1e3">
-
-    <strong>Authentication:</strong>
-        <div class="row">
-            <div class="col-md-1">
-                <a href="https://www.instagram.com/oauth/authorize/?client_id=acbd4e04e0fe487bbb0e9d7f54dbd124&redirect_uri=http://cnctsocials.com&response_type=token"
-                target="_blank"><img src="/site2/Images/instagramlogo.jpg" width="50" height="50" /></a>
-            </div>
-            <div class="col-md-1">
-                <a href=" " target="_blank"><img src="/site2/Images/youtubelogo.jpg" width="50" height="50" /></a>
-            </div>
-        </div>
-
-        <form onsubmit="return false;">
-            Copy and Paste URL here:<br>
-            <input type="text" id="userInput"/><br>
-            <input type="submit" onclick="onInstaAuthenticationClick()"/>
-        </form>
-
+    <br>
         <div class="row">
             <div class="col-sm-3">
-                <div class="panel panel-default" style="background-color:#f9f9f9; padding:15px">
-                    User Info Block
+                <div class="panel panel-default" style="background-color:#f9f9f9; padding:15px" id="userInfo">
+                    <strong>User Info</strong>
+                    <hr>
+                    <?php
+                        echo($session->username);
+                    ?>
+                    <br>
+                    <button id="authenticateButton" type="button" class="btn btn-primary" onclick="authenticateClicked()">Authenticate</button>
                 </div>
             </div>
             <div class="col-sm-6">
@@ -168,6 +162,7 @@ function myFunction() {
     var query = '';
     var reachedMax = false;
     var searched = false;
+    var username = "<?php echo $session->username ?>";
 
     $(document).ready(function () {
         onSubmit();
@@ -178,6 +173,36 @@ function myFunction() {
             getData();
         }
     });
+    
+    function authenticateClicked() {
+        $("#userInfo").append(`
+        <div class="row">
+            <a onclick="authenticateInstaClicked()" href="https://www.instagram.com/oauth/authorize/?client_id=acbd4e04e0fe487bbb0e9d7f54dbd124&redirect_uri=http://cnctsocials.com&response_type=token"
+            target="_blank"><img src="/site2/Images/instagramlogo.jpg" width="50" height="50" /></a>
+            <a onclick="authenticateYoutubeClicked()" href="https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=offline&client_id=750014165959-mp4i064fhp1sbag5r1i8l4n39oejk59m.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.cnct-socials.com%2Fsite2%2F&state&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.readonly&approval_prompt=auto" target="_blank"><img src="/site2/Images/youtubelogo.jpg" width="50" height="50" /></a>
+        </div>
+        `);
+    }
+    
+    function authenticateInstaClicked() {
+        $("#userInfo").append(`
+        <form onsubmit="return false;">
+            Copy and Paste URL here:<br>
+            <input type="text" id="userInput"/><br>
+            <input type="submit" onclick="onInstaAuthenticationClick()"/>
+        </form>
+        `)
+    }
+    
+    function authenticateYoutubeClicked() {
+        $("#userInfo").append(`
+        <form onsubmit="return false;">
+            Copy and Paste URL here:<br>
+            <input type="text" id="userInput"/><br>
+            <input type="submit" onclick="onYoutubeAuthenticationClick()"/>
+        </form>
+        `)
+    }
 
     function onSubmit() {
         searched = true;
@@ -190,12 +215,50 @@ function myFunction() {
 
     function onInstaAuthenticationClick() {
         $.ajax({
-            url: '/site2/Scripts/SQL/insertPosts.php',
+            url: '/site2/Scripts/SQL/insertInstaAccessToken.php',
             type: 'POST',
             dataType: 'text',
-            data: "test",
+            data: {
+                url: document.getElementById("userInput").value,
+                userid: username
+            },
             success: function (response) {
-                alert("worked ?");
+                $.ajax({
+                url: '/site2/Scripts/SQL/insertPosts.php',
+                type: 'POST',
+                dataType: 'text',
+                data: {
+                    userid: username
+                },
+                success: function (response) {
+                    alert("worked ?")
+                }
+            });
+            }
+        });
+    }
+    
+    function onYoutubeAuthenticationClick() {
+        $.ajax({
+            url: '/site2/Scripts/SQL/insertYoutubeAccessToken.php',
+            type: 'POST',
+            dataType: 'text',
+            data: {
+                url: document.getElementById("userInput").value,
+                userid: username
+            },
+            success: function (response) {
+                $.ajax({
+                url: '/site2/Scripts/SQL/insertYoutubePosts.php',
+                type: 'POST',
+                dataType: 'text',
+                data: {
+                    userid: username
+                },
+                success: function (response) {
+                    alert("worked ?")
+                }
+            });
             }
         });
     }

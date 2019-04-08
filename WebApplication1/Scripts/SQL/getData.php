@@ -47,7 +47,7 @@
 			switch($data['id'][0]) {
 				case 'i':
 					$response .= '
-					<a href="' . $data['link'] . '">
+					<a href="' . $data['link'] . '" target="_blank">
 						<div class="row" style="margin-left:15px; margin-right:15px">
 							' . $conn->query("SELECT users.username FROM `posts`
 							LEFT JOIN `users` ON posts.userid = users.instagramId
@@ -75,14 +75,18 @@
 							</ol>
 							<div class="carousel-inner">
 								<div class="item active">
-									<img src="' . $sqlMedia->fetch_array()['link'] . '" alt = "' . $mediaNum++ . '" style="width:100%">
+    								<a href="' . $data['link'] . '" target="_blank">
+    									<img src="' . $sqlMedia->fetch_array()['link'] . '" alt = "' . $mediaNum++ . '" style="width:100%">
+    								</a>
 								</div>
 					';
 
 					while($media = $sqlMedia->fetch_array()) {
 						$response .= '
 								<div class="item">
-									<img src="' . $media['link'] . '" alt = "' . $mediaNum++ . '" style="width:100%">
+    								<a href="' . $data['link'] . '" target="_blank">
+    									<img src="' . $media['link'] . '" alt = "' . $mediaNum++ . '" style="width:100%">
+    								</a>
 								</div>
 						';
 					}
@@ -102,7 +106,7 @@
 					$response .= '
 						</div>
 					</div>
-					<a href="' . $data['link'] . '">
+					<a href="' . $data['link'] . '" target="_blank">
 						<div class="row" style="margin-left:15px; margin-right:15px">
 							' . $data['time'] . '
 						</div>
@@ -112,7 +116,7 @@
 				case 'y':
 					# Youtube Post
 					$response .= '
-					<a href="' . $data['link'] . '">
+					<a href="' . $data['link'] . '" target="_blank">
 						<div class="row" style="margin-left:15px; margin-right:15px">
 							' . $conn->query("SELECT users.username FROM `posts`
 							LEFT JOIN `users` ON posts.userid = users.youtubeId
@@ -127,17 +131,16 @@
 						ORDER BY media.id ASC");
 						
 					$response .= '
-						<img src="' . $sqlMedia->fetch_array()['link'] . '" style="width:100%">
+					    <a href="' . $data['link'] . '" target="_blank">
+    						<img src="' . $sqlMedia->fetch_array()['link'] . '" style="width:100%">
+						</a>
 					</div>
-					<a href="' . $data['link'] . '">
+					<a href="' . $data['link'] . '" target="_blank">
 						<div class="row" style="margin-left:15px; margin-right:15px">
 							' . $data['time'] . '
 						</div>
 					</a>';
 
-					break;
-				case 'f':
-					# Facebook Post
 					break;
 				default:
 					echo("it broke ?");

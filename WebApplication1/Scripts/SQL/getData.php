@@ -1,16 +1,17 @@
 <?php
+    # Establish connection to mysql database
 	$conn = new mysqli('155.138.243.181', 'cnctsoci_admin', 'Csc3380!!!', 'cnctsoci_data');
+	
+	# Get parameters from POST request
 	$start = $conn->real_escape_string($_POST['start']);
 	$limit = $conn->real_escape_string($_POST['limit']);
+	$limit = 2000;
 	$query = $_POST['query'];
-	#$users = stripslashes($conn->real_escape_string($_POST['users']));
-
-	#$sqlUser = $conn->query("SELECT instagramId, facebookId, twitterId FROM `users` WHERE `id` = $user");
-	#$instagramId = $sqlUser->fetch_array();
-	#$facebookId = $sqlUser->fetch_array();
-	#$twitterId = $sqlUser->fetch_array();
+	
 	$queryString = 'WHERE ';
 
+    # Add to query string with social media filter
+    # Using == "true" because JS -> PHP seems to turn the boolean into a string 
 	if($query['isInstagram'] == "true") { 
 		$queryString .= '(posts.id LIKE "i%" ';
 
@@ -23,29 +24,36 @@
 		$queryString .= 'posts.id LIKE "y%" AND ';
 	}
 
+    # If parameters for times do not exist, use default values
 	if($query['timeStart'] == "")
 		$query['timeStart'] = "1111/1/1";
 	if($query['timeEnd'] == "")
 		$query['timeEnd'] = date("Y/m/d");
 
+    # Add to query string with time filter
 	$queryString .= 'posts.time BETWEEN "' . $query['timeStart'] . '" AND "' . $query['timeEnd'] . '" ';
 	
+	# Query for all posts matching filter criteria
 	$sqlPosts = $conn->query("SELECT * FROM `posts`
 		" . $queryString . " 
-		ORDER BY `time` DESC 
+		ORDER BY `time` DESC
 		LIMIT $start, $limit");
 
+    # Return max if no results found
 	if ($sqlPosts->num_rows > 0) 
 	{
 		$response = "";
 
 		while($data = $sqlPosts->fetch_array()) {
+		    # $response is the html that is returned to the feed page
 			$response .= '
 			<div class="row">
 				<div class="panel panel-default" style="margin-left:auto; margin-right:auto; width:90%">';
 
+            # Switch between Instagram or Youtube
 			switch($data['id'][0]) {
 				case 'i':
+				    # Instagram Post
 					$response .= '
 					<a href="' . $data['link'] . '" target="_blank">
 						<div class="row" style="margin-left:15px; margin-right:15px">
@@ -59,6 +67,7 @@
 							<ol class="carousel-indicators">
     							<li data-target="#carousel' . $data['id'] . '" data-slide-to="0" class="active"></li>';
 
+                    # If more than one image is associated with one post, it is added in carousel form here
 					$sqlMedia = $conn->query("SELECT media.link FROM `posts`
 						LEFT JOIN `media` ON posts.id = media.postid
 						WHERE posts.id LIKE '" . $data['id'] . "'
@@ -143,7 +152,8 @@
 
 					break;
 				default:
-					echo("it broke ?");
+				    # Does not match Youtube or Instagram post ID
+					echo("Error: Not Youtube or Instagram");
 					break;
 			}
 			$response .= '

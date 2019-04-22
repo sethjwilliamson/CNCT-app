@@ -1,0 +1,421 @@
+[07-Apr-2019 23:26:30 UTC] PHP Fatal error:  Class 'Google_Client' not found in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 9
+[07-Apr-2019 23:26:37 UTC] PHP Fatal error:  Class 'Google_Client' not found in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 9
+[07-Apr-2019 23:29:36 UTC] PHP Fatal error:  Class 'Google_Client' not found in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 9
+[07-Apr-2019 23:30:35 UTC] PHP Fatal error:  Class 'Google_Client' not found in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 9
+[07-Apr-2019 23:31:00 UTC] PHP Fatal error:  Class 'Google_Client' not found in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 9
+[07-Apr-2019 23:31:39 UTC] PHP Fatal error:  Class 'Google_Client' not found in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 9
+[07-Apr-2019 23:32:12 UTC] PHP Fatal error:  Class 'Google_Client' not found in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 9
+[07-Apr-2019 23:32:23 UTC] PHP Fatal error:  Class 'Google_Client' not found in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 9
+[07-Apr-2019 23:32:52 UTC] PHP Fatal error:  Class 'Google_Client' not found in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 9
+[08-Apr-2019 02:41:44 UTC] PHP Fatal error:  Class 'Google_Client' not found in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 9
+[08-Apr-2019 02:42:40 UTC] PHP Fatal error:  Class 'Google_Client' not found in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 9
+[08-Apr-2019 02:45:43 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Please run "composer require google/apiclient:~2.0" in "/home/cnctsocials/public_html/site2/Scripts/Youtube"' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 10
+[08-Apr-2019 02:46:36 UTC] PHP Fatal error:  Class 'Google_Client' not found in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 2
+[08-Apr-2019 02:47:45 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Please run "composer require google/apiclient:~2.0" in "/home/cnctsocials/public_html/site2/Scripts/Youtube"' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 10
+[08-Apr-2019 03:26:05 UTC] PHP Parse error:  syntax error, unexpected '$client' (T_VARIABLE) in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 9
+[08-Apr-2019 03:26:19 UTC] PHP Parse error:  syntax error, unexpected '$client' (T_VARIABLE) in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 9
+[08-Apr-2019 03:49:36 UTC] PHP Parse error:  syntax error, unexpected '$client' (T_VARIABLE) in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 9
+[08-Apr-2019 03:49:46 UTC] PHP Parse error:  syntax error, unexpected '$client' (T_VARIABLE) in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 9
+[08-Apr-2019 04:05:49 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:859
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(8): Google_Client->setAuthConfig('client_secret.j...')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 859
+[08-Apr-2019 04:05:52 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:859
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(8): Google_Client->setAuthConfig('client_secret.j...')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 859
+[08-Apr-2019 04:05:57 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:859
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(8): Google_Client->setAuthConfig('client_secret.j...')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 859
+[08-Apr-2019 04:06:58 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'missing the required redirect URI' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/auth/src/OAuth2.php:650
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php(339): Google\Auth\OAuth2->buildFullAuthorizationUri(Array)
+#1 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(10): Google_Client->createAuthUrl()
+#2 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/auth/src/OAuth2.php on line 650
+[08-Apr-2019 04:07:02 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'missing the required redirect URI' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/auth/src/OAuth2.php:650
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php(339): Google\Auth\OAuth2->buildFullAuthorizationUri(Array)
+#1 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(10): Google_Client->createAuthUrl()
+#2 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/auth/src/OAuth2.php on line 650
+[08-Apr-2019 04:07:16 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'missing the required redirect URI' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/auth/src/OAuth2.php:650
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php(339): Google\Auth\OAuth2->buildFullAuthorizationUri(Array)
+#1 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(10): Google_Client->createAuthUrl()
+#2 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/auth/src/OAuth2.php on line 650
+[08-Apr-2019 04:14:02 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Please run "composer require google/apiclient:~2.0" in "/home/cnctsocials/public_html/site2/Scripts/Youtube"' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 10
+[08-Apr-2019 04:15:23 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 29
+[08-Apr-2019 04:15:23 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(32): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 04:16:00 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 29
+[08-Apr-2019 04:16:00 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(32): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 04:27:43 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting ',' or ';' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[08-Apr-2019 04:27:55 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting ',' or ';' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[08-Apr-2019 05:09:57 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 27
+[08-Apr-2019 05:09:57 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(30): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 05:10:00 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 27
+[08-Apr-2019 05:10:00 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(30): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 05:10:02 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 27
+[08-Apr-2019 05:10:02 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(30): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 05:10:14 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 27
+[08-Apr-2019 05:10:14 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(30): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 05:11:01 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 28
+[08-Apr-2019 05:11:01 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(31): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 05:11:36 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 28
+[08-Apr-2019 05:11:36 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(31): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 05:12:14 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 28
+[08-Apr-2019 05:12:14 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(31): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 05:13:13 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 28
+[08-Apr-2019 05:13:13 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(32): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 05:13:14 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 28
+[08-Apr-2019 05:13:14 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(32): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 05:14:00 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 27
+[08-Apr-2019 05:14:00 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(30): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 20:40:17 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 27
+[08-Apr-2019 20:40:17 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(30): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 21:52:55 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 27
+[08-Apr-2019 21:52:55 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(30): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 21:53:04 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 27
+[08-Apr-2019 21:53:04 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(30): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 21:53:11 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 27
+[08-Apr-2019 21:53:11 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(30): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 21:54:19 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 28
+[08-Apr-2019 21:54:19 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(31): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 21:56:16 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 29
+[08-Apr-2019 21:56:16 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(32): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 22:02:07 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 29
+[08-Apr-2019 22:02:07 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(32): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 22:32:42 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 32
+[08-Apr-2019 22:32:42 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(34): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 22:32:45 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 32
+[08-Apr-2019 22:32:45 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(34): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 22:32:48 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 32
+[08-Apr-2019 22:32:48 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(34): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 22:33:19 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 33
+[08-Apr-2019 22:33:19 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(35): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[08-Apr-2019 23:27:16 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid token format' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:433
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(38): Google_Client->setAccessToken(Array)
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 433
+[08-Apr-2019 23:38:06 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'invalid json token' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:430
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(39): Google_Client->setAccessToken(NULL)
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 430
+[08-Apr-2019 23:39:04 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'invalid json token' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:430
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(39): Google_Client->setAccessToken(NULL)
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 430
+[08-Apr-2019 23:40:12 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'invalid json token' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:430
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(39): Google_Client->setAccessToken(NULL)
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 430
+[09-Apr-2019 00:16:52 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(31): Google_Client->fetchAccessTokenWithAuthCode(NULL)
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[09-Apr-2019 00:37:03 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 50
+[09-Apr-2019 00:37:03 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 50
+[09-Apr-2019 00:37:03 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 50
+[09-Apr-2019 00:37:03 UTC] PHP Warning:  Illegal string offset 'channelId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 50
+[09-Apr-2019 00:38:47 UTC] PHP Parse error:  syntax error, unexpected 'curl_close' (T_STRING) in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 52
+[09-Apr-2019 00:38:50 UTC] PHP Parse error:  syntax error, unexpected 'curl_close' (T_STRING) in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 52
+[09-Apr-2019 00:45:05 UTC] PHP Warning:  Illegal string offset 'kind' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 50
+[09-Apr-2019 00:48:34 UTC] PHP Warning:  Illegal string offset 'kind' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 50
+[09-Apr-2019 00:49:33 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 50
+[09-Apr-2019 00:50:35 UTC] PHP Warning:  Illegal string offset 'kind' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 50
+[09-Apr-2019 01:24:29 UTC] PHP Parse error:  syntax error, unexpected 'file_put_contents' (T_STRING) in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 51
+[09-Apr-2019 01:26:36 UTC] PHP Parse error:  syntax error, unexpected 'file_put_contents' (T_STRING) in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 51
+[09-Apr-2019 01:27:27 UTC] PHP Parse error:  syntax error, unexpected 'file_put_contents' (T_STRING) in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 51
+[09-Apr-2019 01:49:12 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(31): Google_Client->fetchAccessTokenWithAuthCode(NULL)
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[09-Apr-2019 01:55:58 UTC] PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 49
+[09-Apr-2019 01:57:52 UTC] PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 49
+[09-Apr-2019 01:58:32 UTC] PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 49
+[09-Apr-2019 01:59:03 UTC] PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 49
+[09-Apr-2019 02:01:14 UTC] PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 49
+[09-Apr-2019 02:01:34 UTC] PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 49
+[09-Apr-2019 03:12:36 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(31): Google_Client->fetchAccessTokenWithAuthCode(NULL)
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[09-Apr-2019 03:37:50 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:37:50 UTC] PHP Warning:  Illegal string offset 'i' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:37:50 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:37:50 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:37:50 UTC] PHP Warning:  Illegal string offset 'videoId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:37:50 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:37:50 UTC] PHP Warning:  Illegal string offset 'i' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:37:50 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:37:50 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:37:50 UTC] PHP Warning:  Illegal string offset 'videoId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:45:04 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:45:04 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:45:04 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:45:04 UTC] PHP Warning:  Illegal string offset 'videoId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:45:04 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:45:04 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:45:04 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:45:04 UTC] PHP Warning:  Illegal string offset 'videoId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:46:33 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:46:33 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:46:33 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:46:33 UTC] PHP Warning:  Illegal string offset 'videoId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:46:33 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:46:33 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:46:33 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:46:33 UTC] PHP Warning:  Illegal string offset 'videoId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:47:27 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:47:27 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:47:27 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:47:27 UTC] PHP Warning:  Illegal string offset 'videoId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:47:27 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:47:27 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:47:27 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:47:27 UTC] PHP Warning:  Illegal string offset 'publishedAt' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:48:28 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:48:28 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:48:28 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:48:28 UTC] PHP Warning:  Illegal string offset 'videoId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:48:28 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:48:28 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:48:28 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:48:28 UTC] PHP Warning:  Illegal string offset 'publishedAt' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:49:37 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:49:37 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:49:37 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:49:37 UTC] PHP Warning:  Illegal string offset 'videoId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:49:37 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:49:37 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:49:37 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:49:37 UTC] PHP Warning:  Illegal string offset 'publishedAt' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:52:05 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:52:05 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:52:05 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:52:05 UTC] PHP Warning:  Illegal string offset 'videoId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:52:05 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:52:05 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:52:05 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:52:05 UTC] PHP Warning:  Illegal string offset 'publishedAt' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:52:58 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:52:58 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:52:58 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:52:58 UTC] PHP Warning:  Illegal string offset 'videoId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:52:58 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:52:58 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:52:58 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:52:58 UTC] PHP Warning:  Illegal string offset 'publishedAt' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:54:12 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:55:21 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:55:21 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:55:21 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:55:21 UTC] PHP Warning:  Illegal string offset 'videoId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:55:21 UTC] PHP Warning:  Illegal string offset 'items' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:55:21 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:55:21 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:55:21 UTC] PHP Warning:  Illegal string offset 'publishedAt' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:57:01 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:57:01 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:57:01 UTC] PHP Warning:  Illegal string offset 'videoId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 65
+[09-Apr-2019 03:57:01 UTC] PHP Warning:  Illegal string offset 'snippet' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:57:01 UTC] PHP Warning:  Illegal string offset 'resourceId' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 03:57:01 UTC] PHP Warning:  Illegal string offset 'publishedAt' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 67
+[09-Apr-2019 04:18:35 UTC] PHP Warning:  mysqli::query() expects at most 2 parameters, 5 given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 78
+[09-Apr-2019 04:21:30 UTC] PHP Warning:  mysqli::query() expects at most 2 parameters, 5 given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 78
+[09-Apr-2019 04:23:34 UTC] PHP Warning:  mysqli::query() expects at most 2 parameters, 5 given in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 78
+[09-Apr-2019 05:37:25 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php:182
+Stack trace:
+#0 /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php(30): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 {main}
+  thrown in /home/cnctsocials/public_html/site2/Scripts/Youtube/vendor/google/apiclient/src/Google/Client.php on line 182
+[09-Apr-2019 06:08:54 UTC] PHP Warning:  curl_exec(): 60 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 40
+[09-Apr-2019 06:08:54 UTC] PHP Warning:  curl_close(): 60 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 44
+[09-Apr-2019 06:08:54 UTC] PHP Warning:  curl_exec(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 40
+[09-Apr-2019 06:08:54 UTC] PHP Warning:  curl_close(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 44
+[09-Apr-2019 06:08:54 UTC] PHP Warning:  curl_exec(): 62 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 40
+[09-Apr-2019 06:08:54 UTC] PHP Warning:  curl_close(): 62 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 44
+[09-Apr-2019 06:08:54 UTC] PHP Warning:  curl_exec(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 40
+[09-Apr-2019 06:08:54 UTC] PHP Warning:  curl_close(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 44
+[09-Apr-2019 06:18:58 UTC] PHP Warning:  curl_exec(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 40
+[09-Apr-2019 06:18:58 UTC] PHP Warning:  curl_close(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 46
+[09-Apr-2019 06:18:58 UTC] PHP Warning:  curl_exec(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 40
+[09-Apr-2019 06:18:58 UTC] PHP Warning:  curl_close(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 46
+[09-Apr-2019 06:18:59 UTC] PHP Warning:  curl_exec(): 65 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 40
+[09-Apr-2019 06:18:59 UTC] PHP Warning:  curl_close(): 65 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 46
+[09-Apr-2019 06:18:59 UTC] PHP Warning:  curl_exec(): 67 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 40
+[09-Apr-2019 06:18:59 UTC] PHP Warning:  curl_close(): 67 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 46
+[09-Apr-2019 06:19:42 UTC] PHP Warning:  curl_exec(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 40
+[09-Apr-2019 06:19:42 UTC] PHP Warning:  curl_close(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 46
+[09-Apr-2019 06:19:42 UTC] PHP Warning:  curl_exec(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 40
+[09-Apr-2019 06:19:42 UTC] PHP Warning:  curl_close(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 46
+[09-Apr-2019 06:19:42 UTC] PHP Warning:  curl_exec(): 65 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 40
+[09-Apr-2019 06:19:42 UTC] PHP Warning:  curl_close(): 65 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 46
+[09-Apr-2019 06:19:43 UTC] PHP Warning:  curl_exec(): 67 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 40
+[09-Apr-2019 06:19:43 UTC] PHP Warning:  curl_close(): 67 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 46
+[09-Apr-2019 06:20:10 UTC] PHP Warning:  curl_exec(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 40
+[09-Apr-2019 06:20:10 UTC] PHP Warning:  curl_close(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 46
+[09-Apr-2019 06:20:11 UTC] PHP Warning:  curl_exec(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 40
+[09-Apr-2019 06:20:11 UTC] PHP Warning:  curl_close(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 46
+[09-Apr-2019 06:20:11 UTC] PHP Warning:  curl_exec(): 65 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 40
+[09-Apr-2019 06:20:11 UTC] PHP Warning:  curl_close(): 65 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 46
+[09-Apr-2019 06:20:11 UTC] PHP Warning:  curl_exec(): 67 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 40
+[09-Apr-2019 06:20:11 UTC] PHP Warning:  curl_close(): 67 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 46
+[09-Apr-2019 06:21:01 UTC] PHP Fatal error:  Undefined constant 'n' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 44
+[09-Apr-2019 06:21:10 UTC] PHP Fatal error:  Undefined constant 'n' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 44
+[09-Apr-2019 06:21:18 UTC] PHP Fatal error:  Undefined constant 'n' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 44
+[09-Apr-2019 06:21:33 UTC] PHP Fatal error:  Undefined constant 'n' in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 44
+[09-Apr-2019 06:26:50 UTC] PHP Warning:  curl_exec(): 59 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 41
+[09-Apr-2019 06:26:51 UTC] PHP Warning:  curl_exec(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 41
+[09-Apr-2019 06:26:51 UTC] PHP Warning:  curl_exec(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 41
+[09-Apr-2019 06:26:51 UTC] PHP Warning:  curl_exec(): 65 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 41
+[09-Apr-2019 06:26:51 UTC] PHP Warning:  curl_exec(): 67 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 41
+[09-Apr-2019 06:42:09 UTC] PHP Warning:  curl_close(): 60 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 06:42:09 UTC] PHP Warning:  curl_close(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 06:42:09 UTC] PHP Warning:  curl_close(): 62 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 06:42:09 UTC] PHP Warning:  curl_close(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 06:44:06 UTC] PHP Warning:  curl_close(): 60 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 06:44:07 UTC] PHP Warning:  curl_close(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 06:44:07 UTC] PHP Warning:  curl_close(): 62 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 06:44:07 UTC] PHP Warning:  curl_close(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 06:47:34 UTC] PHP Warning:  curl_close(): 60 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 06:47:34 UTC] PHP Warning:  curl_close(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 06:47:34 UTC] PHP Warning:  curl_close(): 62 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 06:47:35 UTC] PHP Warning:  curl_close(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 06:51:56 UTC] PHP Warning:  curl_close(): 60 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 06:51:57 UTC] PHP Warning:  curl_close(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 06:51:57 UTC] PHP Warning:  curl_close(): 62 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 06:51:57 UTC] PHP Warning:  curl_close(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:32:43 UTC] PHP Warning:  curl_close(): 60 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:32:43 UTC] PHP Warning:  curl_close(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:32:43 UTC] PHP Warning:  curl_close(): 62 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:32:44 UTC] PHP Warning:  curl_close(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:34:52 UTC] PHP Warning:  curl_close(): 60 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:34:52 UTC] PHP Warning:  curl_close(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:34:53 UTC] PHP Warning:  curl_close(): 62 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:34:53 UTC] PHP Warning:  curl_close(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:41:30 UTC] PHP Warning:  curl_close(): 60 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:41:31 UTC] PHP Warning:  curl_close(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:41:31 UTC] PHP Warning:  curl_close(): 62 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:41:31 UTC] PHP Warning:  curl_close(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:42:46 UTC] PHP Warning:  curl_close(): 60 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:42:46 UTC] PHP Warning:  curl_close(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:42:46 UTC] PHP Warning:  curl_close(): 62 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:42:47 UTC] PHP Warning:  curl_close(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:45:59 UTC] PHP Warning:  curl_close(): 60 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:45:59 UTC] PHP Warning:  curl_close(): 61 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:46:00 UTC] PHP Warning:  curl_close(): 62 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45
+[09-Apr-2019 14:46:00 UTC] PHP Warning:  curl_close(): 63 is not a valid cURL handle resource in /home/cnctsocials/public_html/site2/Scripts/Youtube/Youtube.php on line 45

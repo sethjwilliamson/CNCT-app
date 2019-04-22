@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "google/apiclient": "^2.0"
+    }
+}

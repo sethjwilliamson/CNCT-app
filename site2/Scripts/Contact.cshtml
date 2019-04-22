@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  margin: 10;
+  font-size: 30px;
+  font-family: Courier;
+}
+
+
+
+
+
+
+.header {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  opacity:0.9;
+
+}
+
+
+
+#navbar {
+  overflow: hidden;
+  background-color: white;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+#navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: white;
+  color: black;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <p><font size ="20">the creators</font></p>
+</div>
+
+<div id="navbar">
+  <a class="active" href="/site3TEST/Login%20System%20v.2.0/main.php">Home</a>
+  <a href="/site2/Scripts/Contact.cshtml">Contact</a>
+  <a href="/site3TEST/Login%20System%20v.2.0/main.php">Logout</a>
+
+</div>
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<div class = "container">
+<center>
+    <body background="white">
+        
+    
+    <center>
+        <h3 style="color:Black"></h3>
+        <center><img src="/site2/Images/DSC_0121.jpg" alt="Deric" width="250" height="350"></center>
+        <h3 style="color:black">Deric Masten</h3><center></center>
+        <p><font size="2" face = "Courier" color = "black">
+        dmaste4@lsu.edu<br />
+        Third year at Louisiana State University.<br />
+        Loves spending time with his beautiful wife<br />
+        Always down for some hot wings
+        </font>
+        </p>
+    
+        <center><img src="/site2/Images/alan.jpg" alt="Alan" width="300" height="300"></center>
+        <center><h3 face = "Courier">Alan Nguyen</h3></center>
+        <p><font size="2" face = "Courier" color = "black">
+        angu172@lsu.edu<br />
+        Second year at Louisiana State University<br />
+        Loves to game<br />
+        Always has a craving for sushi
+        </font></p>
+        <center><img src="/site2/Images/rachel.jpg" alt="Rachel" width="250" height="300"></center>
+        <center><h3>Rachel Ferrara</h3></center>
+        <p><font size="2" face = "Courier" color = "black">
+        rferra4@lsu.edu<br />
+        Fourth year at Louisiana State University<br />
+        Loves to train her dog<br />
+        Favorite food to grab is tacos
+        </font></p>
+        <center><img src="/site2/Images/sethW.jpg" alt="Seth Williamson" height="250"></center>
+        <h3>Seth Williamson</h3>
+        <p><font size="2" face = "Courier" color = "black">
+        swil293@lsu.edu<br />
+        Second year at Louisiana State University<br />
+        Loves to game<br />
+        Pasta fanatic
+        </font></p>
+        <center><img src="/site2/Images/BigDude.jpg" alt="Seth" width="256" height="256"></center>
+        <center><h3>Seth Jackson</h3></center>
+        <p><font size="2" face = "Courier" color = "black">
+        sjac116@lsu.edu<br />
+        Second year at Louisiana State University<br />
+        Loves to build computers<br />
+        Buffalo Wild Wings fanatic
+        </font></p>
+   
+</center>
+</div>
+    <p>
+    <font size="3" face = "Courier" color = "black">
+        <address>
+            <strong>Support:</strong>   <a href="mailto:CNCTSOCIALS@gmail.com">CNCTSOCIALS@gmail.com</a><br />
+    </font></p>
+        </address>
+</div>
+</body>
+</html>
